@@ -1,0 +1,119 @@
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-01-31T17:05:38.104+05:30  INFO 97190 --- [           main] a.AsyncNotificationEngineApplication     : Starting AsyncNotificationEngineApplication using Java 21.0.10 with PID 97190 (/Users/apple/fluxonex/healthandfood/async-notification-engine/build/classes/java/main started by apple in /Users/apple/fluxonex/healthandfood/async-notification-engine)
+2026-01-31T17:05:38.106+05:30  INFO 97190 --- [           main] a.AsyncNotificationEngineApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-01-31T17:05:38.370+05:30  INFO 97190 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-01-31T17:05:38.395+05:30  INFO 97190 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2026-01-31T17:05:38.590+05:30  INFO 97190 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-01-31T17:05:38.598+05:30  INFO 97190 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-31T17:05:38.598+05:30  INFO 97190 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-31T17:05:38.626+05:30  INFO 97190 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 498 ms
+2026-01-31T17:05:38.700+05:30  INFO 97190 --- [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-31T17:05:38.729+05:30  INFO 97190 --- [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-01-31T17:05:38.996+05:30  INFO 97190 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-01-31T17:05:39.025+05:30  INFO 97190 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-01-31T17:05:39.088+05:30  INFO 97190 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c346c45
+2026-01-31T17:05:39.088+05:30  INFO 97190 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-01-31T17:05:39.106+05:30  WARN 97190 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-01-31T17:05:39.121+05:30  INFO 97190 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/healthfood_dev]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 15.15
+	Default catalog/schema: healthfood_dev/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31T17:05:39.654+05:30  INFO 97190 --- [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31T17:05:39.719+05:30  INFO 97190 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-01-31T17:05:39.761+05:30 ERROR 97190 --- [           main] a.service.FcmService                     : Error initializing Firebase: Unexpected exception reading PKCS#8 data
+2026-01-31T17:05:39.793+05:30  INFO 97190 --- [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-01-31T17:05:39.902+05:30  WARN 97190 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31T17:05:40.051+05:30  INFO 97190 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-01-31T17:05:40.054+05:30  INFO 97190 --- [           main] a.AsyncNotificationEngineApplication     : Started AsyncNotificationEngineApplication in 2.131 seconds (process running for 2.313)
+2026-01-31T17:06:49.977+05:30  INFO 97190 --- [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31T17:06:49.977+05:30  INFO 97190 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-31T17:06:49.978+05:30  INFO 97190 --- [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-01-31T17:06:50.009+05:30  INFO 97190 --- [nio-8082-exec-1] a.controller.NotificationController      : Received test notification request: {userId=test-user-123, title=Health & Food Test, body=Your personalized nutrition plan is ready!, deviceToken=dummy-android-token-456}
+2026-01-31T17:06:50.012+05:30 ERROR 97190 --- [nio-8082-exec-1] a.controller.NotificationController      : Error sending test notification: FirebaseApp with name [DEFAULT] doesn't exist. 
+Hibernate: insert into notification_logs (created_at,device_token,error_details,message,status,title,type,updated_at,user_id) values (?,?,?,?,?,?,?,?,?)
+2026-01-31T17:43:18.304+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m8s862ms).
+2026-01-31T17:58:51.183+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m32s880ms).
+2026-01-31T18:15:11.965+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clocException in thread "Thread-0" java.io.UncheckedIOException: java.io.IOException: Input/output error
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:63)
+	at org.gradle.internal.UncheckedException.throwAsUncheckedException(UncheckedException.java:42)
+	at org.gradle.internal.daemon.client.clientinput.DaemonClientInputForwarder$ForwardingUserInput.lambda$readAndForwardStdin$0(DaemonClientInputForwarder.java:99)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.readBytes(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:287)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.read1(BufferedReader.java:223)
+	at java.base/java.io.BufferedReader.implRead(BufferedReader.java:314)
+	at java.base/java.io.BufferedReader.read(BufferedReader.java:296)
+	at java.base/java.io.Reader.read(Reader.java:265)
+	at org.gradle.internal.daemon.client.clientinput.DaemonClientInputForwarder$ForwardingUserInput.lambda$readAndForwardStdin$0(DaemonClientInputForwarder.java:97)
+	... 3 more
+      : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m51s854ms).
+2026-01-31T23:55:11.305+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m38s322ms).
+2026-02-01T00:11:17.018+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s707ms).
+2026-02-01T00:14:04.816+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m47s798ms).
+2026-02-01T00:30:28.639+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s814ms).
+2026-02-01T00:46:46.361+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m17s722ms).
+2026-02-01T01:03:10.196+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s825ms).
+2026-02-01T01:05:11.372+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m1s176ms).
+2026-02-01T01:15:08.483+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m27s100ms).
+2026-02-01T01:32:48.309+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m9s815ms).
+2026-02-01T01:50:23.067+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m34s758ms).
+2026-02-01T02:09:14.158+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m21s44ms).
+2026-02-01T02:16:17.060+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m32s894ms).
+2026-02-01T02:33:41.884+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m24s824ms).
+2026-02-01T02:50:43.762+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m31s871ms).
+2026-02-01T03:06:51.617+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m37s844ms).
+2026-02-01T03:17:10.391+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m18s774ms).
+2026-02-01T04:18:05.114+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24s713ms).
+2026-02-01T05:19:04.748+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59s634ms).
+2026-02-01T06:20:05.243+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m495ms).
+2026-02-01T07:17:08.303+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57m3s60ms).
+2026-02-01T08:17:03.988+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m55s685ms).
+2026-02-01T08:26:16.453+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m12s465ms).
+2026-02-01T08:28:44.711+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m28s257ms).
+2026-02-01T08:32:23.882+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m39s172ms).
+2026-02-01T08:38:41.540+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m17s658ms).
+2026-02-01T08:58:49.466+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m7s926ms).
+2026-02-01T09:59:01.220+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11s754ms).
+2026-02-01T10:38:08.673+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=39m7s453ms).
+2026-02-01T12:15:49.630+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h37m40s957ms).
+2026-02-01T13:01:22.107+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45m32s477ms).
+2026-02-01T13:04:21.982+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s850ms), soft-evicting connections from pool.
+2026-02-01T13:57:16.425+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m23s865ms).
+2026-02-01T14:32:30.873+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m14s448ms).
+2026-02-01T14:33:59.741+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m28s868ms).
+2026-02-01T15:22:58.977+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m59s236ms).
+2026-02-01T15:25:40.096+05:30  WARN 97190 --- [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m41s118ms).
